@@ -1,0 +1,199 @@
+/* Ajuste del logo y tamaño de imagen */
+.logo
+    {  background-color: #ffcc00; /* Color de la franja */
+        width: 100%; /* Cubre todo el ancho de la página */
+        height: 60px; /* Altura de la franja */
+        display: flex; /* Centra el contenido dentro de la franja */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        position: relative; /* Permite que el logo salga de la franja */
+
+    }
+
+
+.logo-img {
+    max-height: 110px; /* Tamaño más grande que la franja */
+    position: absolute; /* Permite que el logo se desplace fuera de la franja */
+    
+  
+top: -20px; /* Ajusta la posición del logo, sacándolo por encima de la franja */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+/* Ajuste de la información */
+.info-local {
+    text-align: center; /* Centramos el contenido */
+    
+   
+margin-top: 20px; /* Añadimos un margen superior */
+}
+
+/* Ajuste del mapa */
+#map {
+    width: 100%;
+   height: 300px;
+   margin-top: 20px; /* Puedes ajustar según lo necesites */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.header-info {
+    background-image: url('img/hamburguesaprueba.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+    color: #fff;
+    margin-top: 50px; /* Aumenta o ajusta este valor */
+}
+    
+
+.info-local {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 300px; /* Ajusta este valor según la necesidad */
+}
+
+
+.logo img {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 100px;
+    height: auto;
+    object-fit: cover; /* Esto ajustará la imagen dentro de su contenedor */
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el botón de eliminar */
+.button-remove {
+    background-color: #dc3545; /* Color de fondo rojo */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 3px 8px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 12px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar color */
+}
+
+.button-remove:hover {
+    background-color: #c82333; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .product-name, .product-description, button {
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Media Queries para dispositivos medianos (tabletas) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        padding: 15px;
+    }
+
+    li {
+        flex-direction: row;
+    }
+
+    .product-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .product-name, .product-description, button {
+        margin: 8px 0;
+    }
+
+    button {
+        width: auto;
+        margin-left: 10px;
+    }
+}

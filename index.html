@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Restaurante de Hamburguesas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <a href="#home" class="logo">
+            
+       
+        <img src="img/logosinfondo.png" alt="Logo del Sitio" class="logo-img">
+                
+               
+        </a>
+
+    
+    <div id="header-info">
+        
+ 
+        <p><strong>Nuestra direccion:</strong> Portal Centro Nivel 3, Maule-Talca</p>
+        <p><strong>Horario:</strong> Lunes a sabado, 9:00 AM - 8:00 PM y domingos de 9:00 AM - 7:00 PM </p>
+        <p><strong>Estado:</strong> <span id="estado"></span></p>
+        <a href="https://www.instagram.com/krandy.restobar?igsh=MThxZmw3bTJvdjM0eQ==" target="_blank">Instagram</a>
+    </div>
+
+
+  
+    
+    <h1>Menú kRandy Resto Bar</h1>
+        
+
+        <hr>
+        
+        <h2>Hamburguesas</h2>
+        <ul id="menu">
+            <li><img src="img/Hamburguersaquesua.jpg" alt="Hamburguesa Quesua" class="product-image"> 
+            <span class="product-name"> Hamburguesa Quesua - $10.500 </span>
+            <p class="product-description">Ingredientes: Carne, queso heddar, huevo, tomate, lechuga, papas hilo, platano frito, queso frito apanado y salsas</p>
+            <button onclick="addToCart('Hamburguesa Quesua', 10500)">Añadir al Carrito</button></li>
+            <li><img src="img/hamburguesacuatroquesos.jpg" alt="4 quesos" class="product-image"> 
+            <span class="product-name" > Hamburguesa 4 quesos - $15.000  </span>
+            <p class="product-description">Ingredientes: Queso azul, Queso gauda, Queso de mano, Queso mozzarella, Lechuga, tomate y salsas</p>
+            <button onclick="addToCart('Hamburguesa 4 quesos', 15000)">Añadir al Carrito</button></li>
+            <li><img src="img/hamburguesallanera.jpg" alt="Hamburguesa llanera" class="product-image">
+            <span class="product-name"> Hamburguesa llanera- $7.990 </span>
+            <p class="product-description">Ingredientes:Papas hilo, Lechuga, tomate, carne, queso de mano, platano frito y salsas</p>
+            <button onclick="addToCart('Hamburguesa llanera', 7990)">Añadir al Carrito</button></li>
+            <li><img src="img/burgerpizza.jpg" alt="burgerpizza" class="product-image">
+            <span class="product-name">burgerpizza - $7.990 </span>
+            <p class="product-description">Ingredientes: Queso mozarella, Peperonni, Tocino, carne, papas fritas, salsa de tomate, Parmesano y oregano</p> 
+            <button onclick="addToCart('burgerpizza', 7990)">Añadir al Carrito</button></li>
+            <li><img src="img/hamburguesatriple.jpg" alt=" triple" class="product-image"> 
+            <span class="product-name"> Hamburguesa triple- $7.990 </span>
+            <p class="product-description">Ingredientes: Carne, pollo, chuleta, papas hilo, lechuga, tomate, palta, jamon, huevo, salsa cheddar, aros de cebolla caramelizada, salsas </p>
+            <button onclick="addToCart('Hamburguesa triple', 10990)">Añadir al Carrito</button></li>
+            <li><img src="img/hamburguesabbq.jpg" alt=" Hamburguesa BBQ" class="product-image">
+            <span class="product-name"> Hamburguesa BBQ- $7.990 </span> 
+            <p class="product-description">Ingredientes: Doble carne, Doble tocino, Doble cheddar, Mayonesa, Aderezo BBQ, Cebolla caramelizada, Aros de cebolla, Cebolla crispy </p>
+            <button onclick="addToCart('Hamburguesa BBQ', 10990)">Añadir al Carrito</button></li>
+            <li><img src="img/hamburguesasencilla.jpg" alt=" Hamburguesa Sencilla" class="product-image"> 
+            <span class="product-name"> Hamburguesa Sencilla- $8.990 </span> 
+            <p class="product-description">Ingredientes: Carne, pollo o chuleta ahumada,Tomate, Lechuga, Papas hilo, Palta, Jamón, Huevo, Queso cheddar, Aros de cebolla o cebolla caramelizada (a elección), Salsas </p>
+            <button onclick="addToCart('Hamburguesa Sencilla', 8990)">Añadir al Carrito</button></li>       
+            <li><img src="img/boxfamiliar.jpg" alt=" Box Familiar" class="product-image"> 
+            <span class="product-name"> Box Familiar- $24.000 </span> 
+            <p class="product-description">Ingredientes: 3 hamburguesas, 1 kilo papas cheddar, 1 bebida 1.5 lts </p>
+            <button onclick="addToCart('boxfamiliar', 24000)">Añadir al Carrito</button></li>        
+            <li><img src="img/hamburguesaalplato.jpg" alt=" Hamburguesa al plato" class="product-image"> 
+            <span class="product-name"> Hamburguesa al plato- $6.990 </span> 
+            <p class="product-description">Ingredientes: Carne, pollo, pollo crispy o chuleta ahumada, Tomate, Lechuga, Maíz, Palta, Jamón, Queso, Tocino, Huevo </p>
+            <button onclick="addToCart('Hamburguesa al plato', 6990)">Añadir al Carrito</button></li>   
+            <li><img src="img/hamburguesaamericana.jpg" alt=" Hamburguesa Americana" class="product-image"> 
+            <span class="product-name"> Hamburguesa Americana- $6.000 </span> 
+            <p class="product-description">Ingredientes: Carne, Queso cheddar, Pepinillo, Salsas </p>
+            <button onclick="addToCart('Hamburguesa Americana', 6000)">Añadir al Carrito</button></li>  
+            <li><img src="img/hamburguesamarytierra.jpg" alt=" Hamburguesa Mar y Tierra" class="product-image"> 
+            <span class="product-name"> Hamburguesa Mar y Tierra- $11.000 </span> 
+            <p class="product-description">Ingredientes: Carne, Tomate, Cebolla morada, Canikama frito, Guacamole, Tocino, Camarones, Salsa acevichada de la casa </p>
+            <button onclick="addToCart('Hamburguesa Mar y Tierra', 11000)">Añadir al Carrito</button></li>    
+        </ul>
+
+        <hr>
+
+        <h2>Varios</h2>
+            <ul class="menu">
+                <li><img src="img/patacones.jpg" alt=" Patacones" class="product-image"> 
+                <span class="product-name"> Patacones- $10.990 </span> 
+                <p class="product-description">Ingredientes: Patacones de carne mechada </p>
+                <button onclick="addToCart('Patacones', 10990)">Añadir al Carrito</button></li> 
+                <li><img src="img/pataconesqueso.jpg" alt=" Patacones con queso de mano" class="product-image"> 
+                <span class="product-name"> Patacones con queso de mano- $12.990 </span> 
+                <p class="product-description">Ingredientes: Patacones de carne mechada con queso de mano </p>
+                <button onclick="addToCart('Patacones', 12990)">Añadir al Carrito</button></li>   
+                <li><img src="img/perroscalientespromo.jpg" alt=" Perros Calientes promo" class="product-image"> 
+                <span class="product-name"> Perros Calientes promo- $7.990 </span> 
+                <p class="product-description">Ingredientes: Palta, Queso, Maíz, Repollo, Cebolla, Papas hilo,Salsas </p>
+                <button onclick="addToCart('Perros Calientes promo', 7990)">Añadir al Carrito</button></li> 
+                <li><img src="img/papascheddar.jpg" alt=" Papas cheddar" class="product-image"> 
+                <span class="product-name"> Papas cheddar- $5.990 </span> 
+                <p class="product-description">Ingredientes: 300 grs de papas con aderezo cheddar tocino y cebollin </p>
+                <button onclick="addToCart('Papas cheddar', 5990)">Añadir al Carrito</button></li> 
+                <li><img src="img/tequenos.jpg" alt=" Tequeños" class="product-image"> 
+                <span class="product-name"> Tequeños- $9.990 </span> 
+                <p class="product-description">Ingredientes: Porción de 10 tequeños </p>
+                <button onclick="addToCart('Tequeños', 9990)">Añadir al Carrito</button></li> 
+                <li><img src="img/papasfritas.jpg" alt="Papas Fritas" class="product-image"> 
+                <span class="product-name"> Papas Fritas- $3.990 </span> 
+                <p class="product-description">Ingredientes: Papas Fritas </p>
+                <button onclick="addToCart('Papas Fritas', 3990)">Añadir al Carrito</button></li> 
+                <li><img src="img/perrocalientemechada.jpg" alt="Perro caliente mechada" class="product-image"> 
+                <span class="product-name"> Perro caliente mechada- $5.990 </span> 
+                <p class="product-description">Ingredientes: Mechada, Vienesa, Papas hilo, Repollo, Cebolla, Salsas, Queso, Palta </p>
+                <button onclick="addToCart('Perro caliente mechada', 5990)">Añadir al Carrito</button></li>
+                <li><img src="img/terneritopollo.jpg" alt="Ternerito de Pollo" class="product-image"> 
+                <span class="product-name"> Ternerito de Pollo- $7.000 </span> 
+                <p class="product-description">Ingredientes: Pollo, Tocino, Papas hilo, Maíz, Cebolla, Repollo, Salsas tradicionales, Queso </p>
+                <button onclick="addToCart('Ternerito de Pollo', 7000)">Añadir al Carrito</button></li>
+                <li><img src="img/pollobroaster.jpg" alt="Pollo Broaster" class="product-image"> 
+                <span class="product-name"> Pollo Broaster- $7.990 </span> 
+                <p class="product-description">Ingredientes: 4 filetillos crocantes, 4 tequeños, Porción de papas, Aderezo de la casa </p>
+                <button onclick="addToCart('Pollo Broaster', 7990)">Añadir al Carrito</button></li>      
+                <li><img src="img/papasmechada.jpg" alt="Papas Mechada" class="product-image"> 
+                <span class="product-name"> Papas Mechada- $8.000 </span> 
+                <p class="product-description">Ingredientes: 300 grs de Papas con carne mechada, Aderezo cheddar, Cebollin, Tocino </p>
+                <button onclick="addToCart('Papas Mechada', 8000)">Añadir al Carrito</button></li>    
+                <li><img src="img/papascamaron.jpg" alt="Papas Camaron" class="product-image"> 
+                <span class="product-name"> Papas Camaron- $9.000 </span> 
+                <p class="product-description">Ingredientes: 300 grs de papas fritas, Aderezo cheddar, Camarones, Pollo, Cebollin, Tocino, Pimienta </p>
+                <button onclick="addToCart('Papas Camaron', 8000)">Añadir al Carrito</button></li>         
+                
+            </ul>
+
+        <hr>
+
+        <h2>Ensaladas</h2>
+            <ul id="class_ensaladas">
+                <li><img src="img/ensaladaatun.jpg" alt="Ensalada de atun" class="product-image"> 
+                <span class="product-name"> Ensalada de atun- $6.990 </span> 
+                <p class="product-description">Ingredientes: Lechuga, Palta, Maíz, Tomate, Huevo cocido, Atún, Aderezo de la casa </p>
+                <button onclick="addToCart('Ensalada de atun', 6990)">Añadir al Carrito</button></li>  
+                <li><img src="img/ensaladakrandyapanada.jpg" alt="Ensalada Krandyapanada" class="product-image"> 
+                <span class="product-name"> Ensalada Krandyapanada- $7.500 </span> 
+                <p class="product-description">Ingredientes: Lechuga, Palta, Maíz, Tomate, Huevo cocido, Atún, Aderezo de la casa </p>
+                <button onclick="addToCart('Ensalada Krandyapanada', 7500)">Añadir al Carrito</button></li>  
+                <li><img src="img/ensaladacamarones.jpg" alt="Ensalada de Camarones" class="product-image"> 
+                <span class="product-name"> Ensalada de Camarones- $9.900 </span> 
+                <p class="product-description">Ingredientes: Lechuga, Palta, Maíz, Huevo cocido, Tocino, Camarones, Aderezo de la casa </p>
+                <button onclick="addToCart('Ensalada de Camarones', 9900 )">Añadir al Carrito</button></li>  
+                <li><img src="img/ensaladakrandy.jpg" alt="Ensalada Krandy" class="product-image"> 
+                <span class="product-name"> Ensalada Krandy- $6.990 </span> 
+                <p class="product-description">Ingredientes: Lechuga, Palta, Tomate, Crotones, Aceitunas negras, Aderezo ee la casa </p>
+                <button onclick="addToCart('Ensalada Krandy', 6990)">Añadir al Carrito</button></li>  
+                
+            </ul>
+
+            <hr>
+
+        <h2>Carrito de Compras</h2>
+        <ul id="cart"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button id="sendOrder">Enviar Pedido por WhatsApp</button>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
